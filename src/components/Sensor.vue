@@ -1,6 +1,8 @@
 <template>
   <div class="container mx-auto mt-4">
-    <p class="mt-2 has-text-centered">{{ id }}: {{ val }}</p>
+    <p class="mt-2 has-text-centered">
+      {{ id }}: {{ val }}
+    </p>
   </div>
 </template>
 

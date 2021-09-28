@@ -20,7 +20,9 @@
         dark:bg-gray-900
       "
     >
-      <h4 class="text-xl font-bold leading-tight underline logo">BryggIO</h4>
+      <h4 class="text-xl font-bold leading-tight underline logo">
+        BryggIO
+      </h4>
       <div class="flex flex-row items-center space-x-6 text-sm">
         <button
           class="
@@ -37,14 +39,20 @@
         >
           <ArrowsExpandIcon class="w-5 h-5" />
         </button>
-        <button class="focus:outline-none focus:ring-0" @click="toggleDark()">
+        <button
+          class="focus:outline-none focus:ring-0"
+          @click="toggleDark()"
+        >
           <div
             v-if="isDark"
             class="transition duration-150 hover:text-yellow-600"
           >
             <SunIcon class="w-6 h-6" />
           </div>
-          <div v-else class="transition duration-150 hover:text-indigo-400">
+          <div
+            v-else
+            class="transition duration-150 hover:text-indigo-400"
+          >
             <MoonIcon class="w-6 h-6" />
           </div>
         </button>

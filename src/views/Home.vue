@@ -4,17 +4,26 @@
       This iteration: Vue 3/Vuex 4/ts/vite/Composition API
     </h1>
     <div v-if="loading">
-      <h3 class="mt-4 has-text-centered">Loading...</h3>
+      <h3 class="mt-4 has-text-centered">
+        Loading...
+      </h3>
     </div>
     <div v-else>
-      <p class="mt-2 has-text-centered">Mash temp: {{ mashTemp }}</p>
-      <p class="mt-2 has-text-centered">Boil temp: {{ boilTemp }}</p>
+      <p class="mt-2 has-text-centered">
+        Mash temp: {{ mashTemp }}
+      </p>
+      <p class="mt-2 has-text-centered">
+        Boil temp: {{ boilTemp }}
+      </p>
       <p class="mt-2 has-text-centered">
         NatsClientStatus: {{ natsClientStatus }}
       </p>
     </div>
     Active sensors:
-    <li v-for="sensorClient in activeSensors" :key="sensorClient">
+    <li
+      v-for="sensorClient in activeSensors"
+      :key="sensorClient"
+    >
       {{ sensorClient }}
     </li>
   </div>
